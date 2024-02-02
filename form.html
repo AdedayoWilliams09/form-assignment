@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Application - Skilharvest</title>
+</head>
+<body>
+<center>
+<h2>Bank Account Application Form - Skilharvest</h2>
+
+<form action="submit_form.php" method="post" enctype="multipart/form-data">
+    <!-- Personal Information -->
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="tel" id="phone_number" name="phone_number" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+    <label for="mothers_maiden_name">Mother's Maiden Name:</label>
+    <input type="text" id="mothers_maiden_name" name="mothers_maiden_name" required><br><br>
+
+    <label for="bvn">BVN:</label>
+    <input type="text" id="bvn" name="bvn" required><br><br>
+
+    <!-- Bank Account Details -->
+    <label for="account_number">Account Number:</label>
+    <input type="text" id="account_number" name="account_number" required><br><br>
+
+    <label for="nationality">Nationality:</label>
+<select id="nationality" name="nationality" required>
+    <option value="Algerian">Algerian</option>
+    <option value="Angolan">Angolan</option>
+    <option value="Beninese">Beninese</option>
+    <option value="Botswanan">Botswanan</option>
+    <option value="Burkinabe">Burkinabe</option>
+    <option value="Burundian">Burundian</option>
+    <option value="Cabo Verdean">Cabo Verdean</option>
+    <option value="Cameroonian">Cameroonian</option>
+    <option value="Central African">Central African</option>
+    <option value="Chadian">Chadian</option>
+    <option value="Comoran">Comoran</option>
+    <option value="Congolese">Congolese</option>
+    <option value="Djiboutian">Djiboutian</option>
+    <option value="Egyptian">Egyptian</option>
+    <option value="Equatorial Guinean">Equatorial Guinean</option>
+    <option value="Eritrean">Eritrean</option>
+    <option value="Eswatini">Eswatini</option>
+    <option value="Ethiopian">Ethiopian</option>
+    <option value="Gabonese">Gabonese</option>
+    <option value="Gambian">Gambian</option>
+    <option value="Ghanaian">Ghanaian</option>
+    <option value="Guinean">Guinean</option>
+    <option value="Ivorian">Ivorian</option>
+    <option value="Kenyan">Kenyan</option>
+    <option value="Lesotho">Lesotho</option>
+    <option value="Liberian">Liberian</option>
+    <option value="Libyan">Libyan</option>
+    <option value="Malagasy">Malagasy</option>
+    <option value="Malawian">Malawian</option>
+    <option value="Malian">Malian</option>
+    <option value="Mauritanian">Mauritanian</option>
+    <option value="Mauritian">Mauritian</option>
+    <option value="Moroccan">Moroccan</option>
+    <option value="Mozambican">Mozambican</option>
+    <option value="Namibian">Namibian</option>
+    <option value="Nigerian">Nigerian</option>
+    <option value="Nigerien">Nigerien</option>
+    <option value="Rwandan">Rwandan</option>
+    <option value="Sao Tomean">Sao Tomean</option>
+    <option value="Senegalese">Senegalese</option>
+    <option value="Seychellois">Seychellois</option>
+    <option value="Sierra Leonean">Sierra Leonean</option>
+    <option value="Somali">Somali</option>
+    <option value="South African">South African</option>
+    <option value="South Sudanese">South Sudanese</option>
+    <option value="Sudanese">Sudanese</option>
+    <option value="Tanzanian">Tanzanian</option>
+    <option value="Togolese">Togolese</option>
+    <option value="Tunisian">Tunisian</option>
+    <option value="Ugandan">Ugandan</option>
+    <option value="Zambian">Zambian</option>
+    <option value="Zimbabwean">Zimbabwean</option>
+</select><br><br>
+
+
+    <label for="residential_address">Residential Address:</label>
+    <textarea id="residential_address" name="residential_address" required></textarea><br><br>
+
+    <label for="date_of_birth">Date of Birth:</label>
+    <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
+
+    <label for="marital_status">Marital Status:</label>
+    <select id="marital_status" name="marital_status" required>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="divorced">Divorced</option>
+    </select><br><br>
+
+    <label for="brief_description">Brief Description of Yourself:</label>
+    <textarea id="brief_description" name="brief_description" required></textarea><br><br>
+
+    <label for="passport_upload">Upload Your Passport:</label>
+    <input type="file" id="passport_upload" name="passport_upload" accept="image/*" required><br><br>
+
+    <label for="account_type">Type of Account:</label>
+    <select id="account_type" name="account_type" required>
+        <option value="savings">Savings Account</option>
+        <option value="current">Current Account</option>
+    </select><br><br>
+
+    <label for="state_of_origin">State of Origin:</label>
+    <select id="state_of_origin" name="state_of_origin" required>
+        <option value="Abia">Abia</option>
+        <option value="Adamawa">Adamawa</option>
+        <option value="Akwa Ibom">Akwa Ibom</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Bauchi">Bauchi</option>
+        <option value="Bayelsa">Bayelsa</option>
+        <option value="Benue">Benue</option>
+        <option value="Borno">Borno</option>
+        <option value="Cross River">Cross River</option>
+        <option value="Delta">Delta</option>
+        <option value="Ebonyi">Ebonyi</option>
+        <option value="Edo">Edo</option>
+        <option value="Ekiti">Ekiti</option>
+        <option value="Enugu">Enugu</option>
+        <option value="Gombe">Gombe</option>
+        <option value="Imo">Imo</option>
+        <option value="Jigawa">Jigawa</option>
+        <option value="Kaduna">Kaduna</option>
+        <option value="Kano">Kano</option>
+        <option value="Katsina">Katsina</option>
+        <option value="Kebbi">Kebbi</option>
+        <option value="Kogi">Kogi</option>
+        <option value="Kwara">Kwara</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Nasarawa">Nasarawa</option>
+        <option value="Niger">Niger</option>
+        <option value="Ogun">Ogun</option>
+        <option value="Ondo">Ondo</option>
+        <option value="Osun">Osun</option>
+        <option value="Oyo">Oyo</option>
+        <option value="Plateau">Plateau</option>
+        <option value="Rivers">Rivers</option>
+        <option value="Sokoto">Sokoto</option>
+        <option value="Taraba">Taraba</option>
+        <option value="Yobe">Yobe</option>
+        <option value="Zamfara">Zamfara</option>
+        
+        <option value="Yobe">Yobe</option>
+        <option value="Zamfara">Zamfara</option>
+    </select><br><br>
+
+    <label for="social_media_link">Link to Your Social Media Account:</label>
+    <input type="url" id="social_media_link" name="social_media_link" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
